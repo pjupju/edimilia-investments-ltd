@@ -1,0 +1,27 @@
+@import "vars";
+@import "fonts";
+@import "global";
+
+.header{
+    padding: 30px 0;
+    &__wrapper{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__menu ul{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        & > li{
+            @extend %akzidenzgroteskpro-bold;
+            color: #161B20;
+            text-transform: uppercase;
+            margin-left: 100px;
+            &:hover{
+                color: #5CCEC4;
+                transition: .4s;
+            }
+        }
+    }
+}

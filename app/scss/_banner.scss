@@ -1,0 +1,43 @@
+@import "vars";
+@import "fonts";
+@import "global";
+
+.banner{
+    padding: 30px 0 74px;
+    &__wrapper{
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__left-btn{
+        margin-top: 85px;
+        a{
+            @extend %akzidenzgroteskpro-bold;
+            text-transform: uppercase;
+            color: #161B20;
+            padding: 22px 122px;
+            border: 1px solid #5CCEC4;
+            &:hover{
+                background-color: #5CCEC4;
+                color: #fff;
+                transition: .4s;
+            }
+        }
+    }
+    &__right{
+        margin-left: 11%;
+    }
+    &__right-title{
+        @extend %akzidenzgroteskpro-bold;
+        font-size: 58px;
+        line-height: 64px;
+        text-transform: uppercase;
+        color: #161B20;
+        max-width: 675px;
+        & span{
+            color: #5CCEC4;
+        }
+    }
+    &__right-descr{
+        margin-top: 50px;
+    }
+}
