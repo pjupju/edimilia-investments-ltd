@@ -1,0 +1,117 @@
+@import "vars";
+@import "fonts";
+@import "global";
+
+.software{
+    padding: 120px 0;
+    &__wrapper{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__left{
+        margin-right: 12.5%;
+        padding-top: 5%;
+    }
+    &__bg{
+        background-image: url(../images/software-bg-line.svg);
+        background-size: cover;
+        width: 408px;
+        height: 204px;        
+        z-index: -1;
+        position: absolute;
+        margin-top: 87px;
+        margin-left: 87px;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 582px;
+        z-index: 10000;
+    }
+    &__item{
+        background-image: url(../images/software-bg.svg);
+        background-size: cover;
+        width: 174px;
+        height: 174px;
+        width: 30%;
+        &:nth-child(n+4){
+            margin-top: 30px;
+        }
+        &:nth-child(3){
+            background-image: none;
+        }
+    }
+    &__item-circle{
+        border: 1px solid #5CCEC4;
+        border-radius: 50%;
+        padding: 9px;
+        max-width: 32px;
+        position: absolute;
+        margin-top: 85px;
+        margin-left: 61px;
+    }
+    &__item-dot{
+        width: 12px;
+        height: 12px;
+        background-color: #5CCEC4;
+        border-radius: 50%;
+    }
+    &__item-text{
+        font-size: 12px;
+        line-height: 18px;
+        text-transform: uppercase;
+        @extend %akzidenzgroteskpro-bold;
+        color: #161B20;
+        position: relative;
+        padding: 118px 0 0 20px;
+        &:before{
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 5px;
+            background-color: #5CCEC4;
+            top: 67%;
+            left: 11%;
+        }
+    }
+
+
+
+
+
+
+
+    
+
+
+    &__right-number{
+        margin-top: 40px;
+        @extend %akzidenzgroteskpro-bold;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #5CCEC4;
+    }
+    &__right-img{
+        padding: 30px 0;
+    }
+    &__right-title{
+        @extend %akzidenzgroteskpro-bold;
+        font-size: 30px;
+        line-height: 45px;
+        text-transform: uppercase;
+        color: #161B20;
+    }
+    &__right-subtitle{
+        margin-top: 50px;
+        color: #ABABAB;
+        max-width: 480px;
+    }
+    &__right-text{
+        margin-top: 30px;
+        color: #767676;
+        max-width: 480px;
+    }
+}

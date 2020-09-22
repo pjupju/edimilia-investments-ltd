@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            max-width: 1000px;
+            margin: auto;
+        }
+        .border {
+            border: 1px dashed red;
+            border-radius: 50%;
+        }
+        .first {
+            width: 100%;
+            max-width: 480px;
+            height: 480px;
+            position: relative;
+        }
+        .posit {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .sec {
+            width: 100%;
+            max-width: 400px;
+            height: 400px;
+        }
+
+        .main {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .text {
+            position: absolute;
+        }
+
+        .text::before {
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        .text-1 {
+            left: 10%;
+            top: 17%;
+        }
+        .text-2 {
+            left: 21%;
+            top: 90%;
+        }
+        .text-3 {
+            left: 72%;
+            top: 4%;
+        }
+        .text-4 {
+            left: 99%;
+            top: 50%;
+        }
+        .sec-text {
+            left: 88.5%;
+            top: 17%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="first border">
+
+            <span class="text text-1">Lorem, ipsum.</span>
+            <span class="text text-2">Lorem, ipsum.</span>
+            <span class="text text-3">Lorem, ipsum.</span>
+            <span class="text text-4">Lorem, ipsum.</span>
+            
+            <div class="sec border posit">
+                <span class="text sec-text">Lorem, ipsum.</span>
+                <div class="main posit">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
