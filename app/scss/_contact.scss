@@ -21,4 +21,19 @@
         text-transform: uppercase;
         color: #161B20;
     }
+    &__main{
+        margin-top: 60px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__main-block:nth-child(n+2){
+        margin-top: 30px;
+    }
+    &__main-right{
+        margin-left: 12.5%;
+    }
+    &__main-formtop > input{
+        width: 378px;
+        height: 50px;
+    }
 }
