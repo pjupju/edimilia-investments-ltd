@@ -1,0 +1,104 @@
+@import "vars";
+@import "fonts";
+@import "global";
+
+.contact{
+    &__wrapper{
+        padding: 30px 0 120px;
+    }
+    &__top{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__top-logo{
+        margin-right: 50px;
+    }
+    &__top-title{
+        @extend %akzidenzgroteskpro-bold;
+        font-size: 50px;
+        line-height: 60px;
+        text-transform: uppercase;
+        color: #161B20;
+    }
+    &__main{
+        margin-top: 60px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__main-block:nth-child(n+2){
+        margin-top: 30px;
+    }
+    &__main-right{
+        margin-left: 12.5%;
+    }
+    &__main-formtop{
+        margin-bottom: 20px;
+        & > input{
+            min-width: 378px;
+            border: none;
+            outline: none;
+            background-color: #F0F3F4;
+            padding: 13px 0 13px 20px;
+            font-size: 16px;
+            line-height: 24px;
+            @extend %akzidenzgroteskpro-regular;
+            color: #767676;
+            &:nth-child(n+2){
+                margin-left: 26px;
+            }
+            &:focus::-webkit-input-placeholder{
+                color: transparent;
+            }
+            &:focus:-moz-placeholder{
+                color: transparent;
+            }
+            &:focus::-moz-placeholder{
+                color: transparent;
+            }
+            :focus:-ms-input-placeholder{
+                color: transparent;
+            }
+        }
+    }
+    &__main-formbottom > textarea{
+        min-width: 786px;
+        overflow: auto;
+        outline: none;
+        resize: none;
+        border: none;
+        background-color: #F0F3F4;
+        padding: 13px 0 80px 20px;
+        font-size: 16px;
+        line-height: 24px;
+        @extend %akzidenzgroteskpro-regular;
+        color: #767676;
+        &:focus::-webkit-input-placeholder{
+            color: transparent;
+        }
+        &:focus:-moz-placeholder{
+            color: transparent;
+        }
+        &:focus::-moz-placeholder{
+            color: transparent;
+        }
+        :focus:-ms-input-placeholder{
+            color: transparent;
+        }
+    }
+    &__main-btn{
+        margin-top: 60px;
+        a{
+            @extend %akzidenzgroteskpro-bold;
+            text-transform: uppercase;
+            color: #161B20;
+            padding: 22px 122px;
+            border: 1px solid #5CCEC4;
+            &:hover{
+                background-color: #5CCEC4;
+                color: #fff;
+                transition: .4s;
+            }
+        }
+    }
+}
