@@ -1,0 +1,37 @@
+@import "vars";
+@import "fonts";
+@import "global";
+
+.footer{
+    background-color: #36424C;
+    padding: 30px 0 50px;
+    &__top{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__menu ul{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 300px;
+        & > li{
+            @extend %akzidenzgroteskpro-bold;
+            color: #fff;
+            text-transform: uppercase;
+            margin-left: 100px;
+            &:hover{
+                color: #5CCEC4;
+                transition: .4s;
+            }
+        }
+    }
+    &__copy{
+        text-align: center;
+        margin-top: 50px;
+        font-size: 14px;
+        line-height: 21px;
+        color: #c4c4c4;
+        letter-spacing: 0.08em;
+    }
+}
