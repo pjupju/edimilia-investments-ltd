@@ -1,0 +1,127 @@
+@import "vars";
+@import "fonts";
+@import "global";
+
+.blog{
+    padding: 30px 0 120px;
+    &__top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__top-title{
+        margin-left: 60px;
+        @extend %akzidenzgroteskpro-bold;
+        font-size: 60px;
+        line-height: 72px;
+        color: #161B20;
+        text-transform: uppercase;
+    }
+    &__main-top{
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 60px;
+    }
+    &__main-img{
+        position: relative;
+    }
+    &__main-name{
+        @extend %akzidenzgroteskpro-bold;
+        font-size: 20px;
+        line-height: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        position: absolute;
+        top: 5%;
+        left: 13%;
+        z-index: 777;
+    }
+    &__main-bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__main-item{
+        max-width: 582px;
+        width: 100%;
+        max-height: 406px;
+        background-color: #F0F3F4;
+        position: relative;
+    }
+    &__main-title{
+        @extend %akzidenzgroteskpro-bold;
+        text-transform: uppercase;
+        color: #5CCEC4;
+        position: absolute;
+        top: 29.23%;
+        left: 14.51%;
+    }
+    &__main-descr{
+        @extend %akzidenzgroteskpro-bold;
+        font-size: 30px;
+        line-height: 36px;
+        text-transform: uppercase;
+        color: #161B20;
+        position: absolute;
+        top: 38.23%;
+        left: 14.51%;
+        max-width: 450px;
+    }
+    &__main-blocks{
+        margin-top: 30px;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    &__main-block{
+        background-image: url(../images/blog-block-bg.svg);
+        background-size: cover;
+        width: 567px;
+        height: 325px;
+        position: relative;
+        &:nth-child(2n+2){
+            margin-left: 30px;
+        }
+        &:nth-child(n+3){
+            margin-top: 30px;
+        }
+    }
+    &__main-block--title{
+        @extend %akzidenzgroteskpro-bold;
+        font-size: 14px;
+        line-height: 21px;
+        color: #5CCEC4;
+        text-transform: uppercase;
+        position: absolute;
+        top: 50%;
+        left: 9%;
+    }
+    &__main-block--descr{
+        @extend %akzidenzgroteskpro-bold;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #161B20;
+        max-width: 420px;
+        position: absolute;
+        top: 62%;
+        left: 9%;
+    }
+    &__main-btn{
+        margin-top: 60px;
+        text-align: center;
+        a{
+            @extend %akzidenzgroteskpro-bold;
+            text-transform: uppercase;
+            color: #161B20;
+            padding: 22px 122px;
+            border: 1px solid #5CCEC4;
+            &:hover{
+                background-color: #5CCEC4;
+                color: #fff;
+                transition: .4s;
+            }
+        }
+    }
+}
