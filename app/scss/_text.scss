@@ -1,0 +1,86 @@
+@import "vars";
+@import "fonts";
+@import "global";
+
+.text{
+    padding-bottom: 60px;
+    &__route{
+        display: flex;
+        justify-content: flex-start;
+        & p{
+            @extend %akzidenzgroteskpro-regular;
+        }
+        & p:nth-child(n+2){
+            margin-left: 20px;
+        }
+    }
+    &__main{
+        padding: 0 204px;
+        & h1{
+            margin: 60px 0;
+            @extend %akzidenzgroteskpro-bold;
+            font-size: 50px;
+            line-height: 60px;
+            text-transform: uppercase;
+            color: #161B20;
+        }
+    }
+    &__details{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__details-left {
+        & span:first-child{
+            @extend %akzidenzgroteskpro-bold;
+            text-transform: uppercase;
+            color: #161B20;
+        }
+        & span:nth-child(n+2){
+            margin-left: 30px;
+            @extend %akzidenzgroteskpro-bold;
+            text-transform: uppercase;
+            color: #5CCEC4;
+        }
+    }
+    &__details-right{
+        & span:first-child{
+            @extend %akzidenzgroteskpro-bold;
+            text-transform: uppercase;
+            color: #161B20;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        & a{
+            margin-left: 30px;
+        }
+    }
+    &__img{
+        margin: 60px 0;
+    }
+    &__text{
+        & h2{
+            @extend %akzidenzgroteskpro-bold;
+            font-size: 30px;
+            line-height: 36px;
+            text-transform: uppercase;
+            color:#161B20;
+        }
+        & h3{
+            margin-left: 50px;
+            font-size: 20px;
+            line-height: 24px;
+            text-transform: uppercase;
+            color:#161B20;
+            position: relative;
+            &:before{
+                position: absolute;
+                content: '';
+                left: -6.5%;
+                top: 0;
+                width: 20px;
+                height: 20px;
+                background-color: #5CCEC4;
+            }
+        }
+    }
+}
